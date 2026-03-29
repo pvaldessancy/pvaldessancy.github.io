@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portafolio de Paula Valdés Sancy - Artista Visual Contemporánea radicada en Pucón, Chile.">
+    <title>Paula Valdés Sancy | Fine Art Artist</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">Sancy arte & deco.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Obras</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="animate-fade-in-up">Paula Valdés Sancy</h1>
+            <p class="subtitle animate-fade-in-up delay-1">Fine Art artist based in Pucón, Chile</p>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <span>Descubrir</span>
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-element">
+                    <h2>Declaración de la Artista</h2>
+                    <p class="es-text">Hola, soy Paula, artista contemporánea chilena radicada en Pucón. Mi trabajo en
+                        acrílico y acuarela explora la naturaleza desde una mirada poética y emocional, buscando un
+                        equilibrio entre intuición, materia y sensibilidad.</p>
+                    <p class="en-text">Hi, I'm Paula, a Chilean contemporary artist based in Pucón. My work in
+                        watercolor and acrylic explores nature through a poetic and emotional lens, seeking a balance
+                        between intuition, materiality, and sensitivity.</p>
+                </div>
+                <div class="about-image fade-element">
+                    <!-- Placeholder for artist portrait -->
+                    <img src="img/Paula Valdes pintando.jpg" alt="Paula Valdés Sancy pintando" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding bg-light" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-element">Obras Seleccionadas</h2>
+            <p class="section-subtitle fade-element">Inspiradas en la naturaleza / My best paintings, inspired by nature
+            </p>
+
+            <div class="portfolio-grid">
+                <!-- Obra 1 -->
+                <div class="portfolio-item fade-element"
+                    onclick="openLightbox('img-alma', 'Alma', 'Acrílico técnica mixta, 50 cm x 70 cm. Entre la bruma y el silencio, una claridad se abre paso. El paisaje no es solo un reflejo del cielo, sino del alma que busca renacer.')">
+                    <div class="img-container">
+                        <img id="img-alma" src="img/Alma.png" alt="Alma" loading="lazy">
+                    </div>
+                    <div class="item-info">
+                        <h3>Alma</h3>
+                        <p>50 x 70 cm | Acrílico técnica mixta</p>
+                    </div>
+                </div>
+
+                <!-- Obra 2 -->
+                <div class="portfolio-item fade-element"
+                    onclick="openLightbox('img-umbral', 'Umbral de Luz', 'Acrílico en tela sobre bastidor (2025). 50 cm x 120 cm.')">
+                    <div class="img-container">
+                        <img id="img-umbral" src="img/Umbral de Luz.jpg" alt="Umbral de luz" loading="lazy">
+                    </div>
+                    <div class="item-info">
+                        <h3>Umbral de luz</h3>
+                        <p>50 x 120 cm | Acrílico (2025)</p>
+                    </div>
+                </div>
+
+                <!-- Obra 3 -->
+                <div class="portfolio-item fade-element"
+                    onclick="openLightbox('img-contemplacion', 'Contemplación', '70 cm x 100 cm | Acrílico (2026). Evoca la figura femenina mirando el horizonte. Porque la contemplación no es solo del paisaje, también tiene mucho que decir sobre los caminos que hemos recorrido.')">
+                    <div class="img-container">
+                        <img id="img-contemplacion" src="img/Contemplacion.png" alt="Contemplación" loading="lazy">
+                    </div>
+                    <div class="item-info">
+                        <h3>Contemplación</h3>
+                        <p>70 x 100 cm | Acrílico (2026)</p>
+                    </div>
+                </div>
+
+                <!-- Obra 4 -->
+                <div class="portfolio-item fade-element"
+                    onclick="openLightbox('img-magic', 'Magic Mountains', '60 cm x 90 cm | Acrílico (2026). Una obra que evoca la serenidad de los paisajes abiertos, donde el color se funde en suaves transiciones entre el cielo y la tierra.')">
+                    <div class="img-container">
+                        <img id="img-magic" src="img/Magic Mountains.png" alt="Magic Mountains" loading="lazy">
+                    </div>
+                    <div class="item-info">
+                        <h3>Magic Mountains</h3>
+                        <p>60 x 90 cm | Acrílico (2026)</p>
+                    </div>
+                </div>
+
+                <!-- Obra 5 -->
+                <div class="portfolio-item fade-element"
+                    onclick="openLightbox('img-flora', 'Flora y fauna en acuarela', '25 cm x 25 cm | Acuarela, papel de algodón 300 grs. En homenaje a todos los seres vivos que habitan nuestro territorio.')">
+                    <div class="img-container">
+                        <img id="img-flora" src="img/Flora y fauna en acuarela.png" alt="Flora y fauna en acuarela"
+                            loading="lazy">
+                    </div>
+                    <div class="item-info">
+                        <h3>Fauna en acuarela</h3>
+                        <p>25 x 25 cm | Acuarela</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" id="lightbox-img" src="">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <section class="experience section-padding" id="experience">
+        <div class="container">
+            <h2 class="section-title fade-element">Educación y Experiencia</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-element">
+                    <div class="timeline-content">
+                        <h3>Inicios y Reencuentro</h3>
+                        <p>Pasaron más de veinte años desde la última vez que utilicé un pincel. Entonces, el mundo
+                            cambió... y yo también. Inspirada por las obras de grandes maestros, inicié un camino
+                            autodidacta que me llevó a reconectar con el arte desde la emoción, la intuición y la
+                            búsqueda de sentido.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-element">
+                    <div class="timeline-content">
+                        <h3>Evolución y Profesionalización (2022)</h3>
+                        <p>Mis primeras obras se desarrollaron en óleo y acrílico, evolucionando luego hacia un lenguaje
+                            propio inspirado en los paisajes del sur de Chile. Desde 2022 me dedico de manera
+                            profesional a la pintura. Mi trabajo ha llegado a distintos destinos en Chile y el
+                            extranjero a través de espacios de exhibición como la Galería de Arte Municipal de Temuco,
+                            Hotel Enjoy y espacios locales de Pucón.</p>
+                        <p>Además, desarrollo la fabricación de lienzos en bastidores y enmarcaciones, un oficio
+                            familiar que perfecciono constantemente.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-element">
+                    <div class="timeline-content">
+                        <h3>Comunidad y Arte Abstracto Pucón (2024 - Presente)</h3>
+                        <p>En 2024, radicada en Pucón, participé en el taller de arte abstracto para adultos de la Casa
+                            de la Cultura, colaborando como voluntaria en el mismo espacio el 2025. Ese año me integré a
+                            la Agrupación Arte Abstracto Pucón, donde actualmente formo parte de la directiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards section-padding bg-light" id="awards">
+        <div class="container">
+            <h2 class="section-title fade-element">Premiaciones y Reconocimientos</h2>
+            <div class="award-card fade-element">
+                <div class="award-year">2025</div>
+                <div class="award-details">
+                    <h3>XIII Concurso Regional: "Araucanía de Cordillera a Mar"</h3>
+                    <p>Participación por primera vez en el concurso regional. La obra <strong>"Tierra Viva"</strong> fue
+                        seleccionada para exposición en el XIII Concurso Regional, formando parte de las 22 obras
+                        elegidas entre 110 postulaciones en la Galería Municipal de Arte Temuco.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="footer section-padding" id="contact">
+        <div class="container">
+            <h2 class="fade-element">Contacto</h2>
+            <p class="fade-element">Pucón, Chile - 2026</p>
+
+            <div class="contact-links fade-element">
+                <a href="mailto:p.valdessancy@gmail.com" class="contact-link">
+                    <span class="icon">✉</span> p.valdessancy@gmail.com
+                </a>
+                <a href="https://instagram.com/valdessancy" target="_blank" rel="noopener" class="contact-link">
+                    <span class="icon">📷</span> @valdessancy
+                </a>
+                <a href="tel:+56944933271" class="contact-link">
+                    <span class="icon">📞</span> +56 9 44933271
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Paula Valdés Sancy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
