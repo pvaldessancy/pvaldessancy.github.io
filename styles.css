@@ -174,7 +174,7 @@ h4 {
     /* Franja media tipo banner */
     transform: translateY(-50%);
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
-        url('img/Portada.jpg') center/cover no-repeat;
+        url('img/Portada.jpg?v=1.0.1') center/cover no-repeat;
     background-attachment: fixed;
     opacity: 0.85;
     /* Añade transparencia a la imagen completa */
