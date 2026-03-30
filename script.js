@@ -52,3 +52,10 @@ lightbox.addEventListener('click', (e) => {
         closeLightbox();
     }
 });
+
+// Escape key to close lightbox
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.style.display === 'block') {
+        closeLightbox();
+    }
+});

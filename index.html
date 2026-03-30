@@ -24,26 +24,30 @@
 </head>
 
 <body>
-    <!-- Hero Section with Contained Header & Navigation -->
+    <!-- Artist Branding (White Background) -->
+    <div class="header-branding-wrapper">
+        <div class="header-branding">
+            <h1>Paula Valdés Sancy</h1>
+            <p class="branding-subtitle">Acrylic and watercolor</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation (Faint Gray Background) -->
+    <nav class="main-nav-sticky">
+        <ul class="nav-links-simple">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Obras</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
     <section class="hero-new fade-in" id="home">
-        <div class="hero-bg-image"></div>
-        <div class="hero-overlay"></div>
-        
-        <!-- Contained Branding & Nav -->
-        <header class="site-header-contained">
-            <div class="header-branding">
-                <h1>Paula Valdés Sancy</h1>
-                <p class="branding-subtitle">Acrílico & Mixta</p>
-            </div>
-            <nav class="main-nav">
-                <ul class="nav-links-simple">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#gallery">Obras</a></li>
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="hero-img-container">
+            <img src="img/Portada.jpg" alt="Paula Valdés Sancy - Portada" class="hero-main-image">
+            <div class="hero-overlay"></div>
+        </div>
 
         <div class="hero-content-new">
             <h2 class="hero-title">Bienvenidos</h2>
@@ -59,7 +63,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-text fade-element">
-                    <h2>Declaración de la Artista</h2>
+                    <h2>Acerca de mí / About me</h2>
                     <p class="es-text">Hola, soy Paula, artista contemporánea chilena radicada en Pucón. Mi trabajo en
                         acrílico y acuarela explora la naturaleza desde una mirada poética y emocional, buscando un
                         equilibrio entre intuición, materia y sensibilidad.</p>
@@ -99,7 +103,7 @@
                 <div class="portfolio-item fade-element"
                     onclick="openLightbox('img-umbral', 'Umbral de Luz', 'Acrílico en tela sobre bastidor (2025). 50 cm x 120 cm.')">
                     <div class="img-container">
-                        <img id="img-umbral" src="img/Umbral de Luz.jpg" alt="Umbral de luz" loading="lazy">
+                        <img id="img-umbral" src="img/Umbral de Luz.png" alt="Umbral de luz" loading="lazy">
                     </div>
                     <div class="item-info">
                         <h3>Umbral de luz</h3>
