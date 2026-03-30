@@ -1,27 +1,9 @@
-// Navbar Scroll Effect
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+// Mobile menu closure for the new simplified navigation (optional but good for future-proofing)
+document.querySelectorAll('.nav-links-simple a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Any logic needed when a link is clicked
+    });
 });
-
-// Mobile Hamburger Menu
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
-});
-
-// Close mobile menu when a link is clicked
-document.querySelectorAll('.nav-links li a').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navLinks.classList.remove('active');
-}));
 
 // Intersection Observer for scroll animations (Fade-in elements)
 const fadeElements = document.querySelectorAll('.fade-element');
